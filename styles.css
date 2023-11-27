@@ -1,0 +1,44 @@
+/*nav span { 
+	margin-inline: 1rem;	 
+} 
+.navbar-space{
+    margin-left: 45%;
+}
+.navbar-brand{
+    margin-left: 2%
+}*/
+
+
+/* navbar styles */
+
+.navbar {
+    background-color: #f6e7f7;
+}
+
+.navbar-brand {
+    color: #9b59b6;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #3498db;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #e74c3c;
+}
+
+/* Button styles */
+.btn-explore {
+    background: linear-gradient(to right, #9b59b6, #e74c3c); /* Gradient background */
+    color: #fff;
+    border: 2px solid transparent; /* Transparent solid border */
+    background-clip: padding-box; /* Clip the background to the padding box */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.btn-explore:hover {
+    transform: scale(1.1); /* Scale the button on hover (you can adjust the scale factor) */
+    border: #e74c3c;
+}
