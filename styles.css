@@ -54,7 +54,7 @@
 }
 
 /* Tagline */
-.tagline{
+.tagline, .headings{
     font-family: 'Pacifico', cursive;
 }
 
@@ -117,4 +117,25 @@
     cursor: pointer;
     background: #3b203d;
     color: #f6e7f7;
+}
+
+/* products.html */
+
+/* learn more button */
+.learn-more-btn{
+    border: 0;
+    background-color: #fff;
+}
+
+/* horizontal scrollbar */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
 }
