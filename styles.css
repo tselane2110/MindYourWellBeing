@@ -1,35 +1,101 @@
-/*nav span { 
-	margin-inline: 1rem;	 
-} 
-.navbar-space{
-    margin-left: 45%;
-}
-.navbar-brand{
-    margin-left: 2%
-}*/
 
+/*Review Cards*/
+.card{
+    height: 230px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+/* Product Cards */
+.ecommerce, .appointments, .resources{
+    background-color: #f6e7f7;
+    margin: 15px;
+}
+.product-card {
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: scale(1.1); /* Grow bigger on hover */
+    z-index: 1;
+    cursor: pointer;
+    border-color: rgb(93, 17, 138);
+    color: #f6e7f7;
+}
+
+.product-card:not(:hover) {
+    transition: transform 0.01s ease-in-out; /* Reset transition on mouse out */
+}
+
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #bf8ed3, #e74c3c); /* Gradient border */
+    z-index: -1;
+}
+
+.product-card:hover .btn-product:hover{
+    color: white;
+}
+
+/* product buttons */
+.btn-product{
+    background: linear-gradient(to right, #9b59b6, #e74c3c); /* Gradient border */
+    border: blue;
+}
+
+.btn-product:hover{
+    background: #3b203d;
+    color:  linear-gradient(to right, #9b59b6, #e74c3c);
+}
+
+/* Tagline */
+.tagline{
+    font-family: 'Pacifico', cursive;
+}
 
 /* navbar styles */
 
-.navbar {
-    background-color: #f6e7f7;
-}
-
 .navbar-brand {
-    color: #9b59b6;
+    color: rgb(247, 20, 228);;
     font-weight: 600;
     font-size: 1.5rem;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+.navbar-brand:hover{
+    color:rgb(93, 17, 138);
+}
+
+.nav-item a:hover{
+    color: rgb(247, 20, 228);
 }
 
 .navbar-nav .nav-link {
-    color: #3498db;
+    color: #9b59b6;
+}
+
+.nav-item{
+    margin-right: 5px;
+    font-family: 'Preahvihear', sans-serif;
 }
 
 .navbar-nav .nav-item .nav-link.active {
-    color: #e74c3c;
+    color: rgb(247, 20, 228);
 }
 
 /* Button styles */
+.btn:focus, .btn:active{
+    border-color: #ff00ff !important; /* Change to your desired border color */
+    outline: 0; /* Remove the default outline */
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 255, 0.25); /* Optional: Add a box shadow */
+}
+
 .btn-explore {
     background: linear-gradient(to right, #9b59b6, #e74c3c); /* Gradient background */
     color: #fff;
@@ -41,4 +107,15 @@
 .btn-explore:hover {
     transform: scale(1.1); /* Scale the button on hover (you can adjust the scale factor) */
     border: #e74c3c;
+}
+
+/* Sign In */
+.btn-sign-in{
+    background: linear-gradient(to right, #9b59b6, #e74c3c); /* Gradient background */
+    border: #3b203d;
+}
+.btn-sign-in:hover{
+    cursor: pointer;
+    background: #3b203d;
+    color: #f6e7f7;
 }
