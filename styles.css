@@ -2,7 +2,6 @@
 /*Review Cards*/
 .card{
     height: 230px;
-    overflow: hidden;
     justify-content: center;
 }
 
