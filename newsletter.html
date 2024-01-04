@@ -48,20 +48,21 @@
         </nav>
     </header>
 
-    <!-- Sign In Form Section -->
+    <!-- Subscribe Form Section -->
     <section class="py-5">
         <div class="container col-4">
             <h2 class="text-center mb-4">Subscribe Now!</h2> <br>
-            <form>
+            <form id = "subscribe" onsubmit="subscribeNewsletter(event)">
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" required>
+                    <label for="subscribe_email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="subscribe_email" required>
                 </div>
                 <div class="sign-in text-center">
-                    <button type="button" class="btn btn-sign-in">Subscribe</button>
+                    <button type="submit" class="btn btn-sign-in">Subscribe</button>
                 </div>
             </form>
         </div>
+
         <div class="container text-center">
             <br><br>
             <p style="color: rgb(88, 88, 88);">Subscribe to know the latest news, blogposts and articles from professionals to people seeking solutions to their mental health challenges.</p>
