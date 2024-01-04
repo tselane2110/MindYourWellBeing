@@ -9,6 +9,17 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    nav{
+      background-color: white;
+    }
+    .learn-more-btn{
+      background-color: transparent;
+    }
+    .card{
+      background-color: #f6e7f7;
+    }
+  </style>
   <!-- Link to Favicon -->
   <link rel="icon" href="/images/logo5.png" type="image/x-icon">
   <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
@@ -20,7 +31,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="/index.html">
                     MindYourWellBeing <img src="/images/logo5.png" width="25px" height="25px"></a>
@@ -31,10 +42,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-courses" href="#courses">Courses</a>
+                            <a class="nav-link" id="navbar-courses" href="#">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="navbar-challenges" href="#challlenges">Challenges</a>
+                            <a class="nav-link" id="navbar-challenges" href="#challenges">Challenges</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="navbar-library" href="#library">Library</a>
@@ -45,9 +56,10 @@
         </nav>
     </header>
     <main>
+
 <!--  Courses -->
 
-      <section class="py-5" id="courses">
+      <section class="py-5 mt-5 bg-light" id="courses">
         <div class="container">
           <h2 class="headings">Courses</h2>
           <div class="row-cols-6 d-flex flex-nowrap overflow-auto horizontal-scroll-container course-container">
@@ -107,21 +119,122 @@
       <section class="py-5" id="challenges">
         <div class="container">
           <h2 class="headings">Challenges</h2>
+          <div class="row-cols-6 d-flex flex-nowrap overflow-auto horizontal-scroll-container course-container">
+              <!--  Challenge - Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">21 Day Challenge</h5>
+                  <p class="card-text">We’ve mapped out 21 simple ways to boost your mental health with simple lifestyle changes and actionable coping mechanisms. </p>
+                  <a href="https://fitonapp.com/wellness/21-day-mental-wellness-challenge/" target="_blank" class="btn btn-primary btn-explore">Try Now</a>
+                </div>
+              </div>
+              <!--  Challenge - Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AASP 30-day Challenge</h5>
+                  <p class="card-text">AASP invites you to join our 30-Day Mental Health Challenge: a series of daily tasks...</p>
+                  <a href="https://appliedsportpsych.org/blog/2021/04/aasp-30-day-mental-health-month-challenge/" target="_blank" class="btn btn-primary btn-explore">Try Now</a>
+                </div>
+              </div>
+              <!--  Challenge - Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">4Mind4Body Challenge</h5>
+                  <p class="card-text">Join Mental Health America as we challenge ourselves each day this May to make small changes – both physically and mentally...</p>
+                  <a href="https://www.mhanational.org/4mind4body-challenge" target="_blank" class="btn btn-primary btn-explore">Try Now</a>
+                </div>
+              </div>
+              <!--  Challenge - Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Boost your Mental Health</h5>
+                  <p class="card-text">Mental health is health. To help with day-to-day stress and challenges, we’re offering 10 tips to boost yours.</p>
+                  <a href="http://www.bcmhsus.ca/about/news-stories/stories/10-tips-to-boost-your-mental-health" target="_blank" class="btn btn-primary btn-explore">Try Now</a>
+                </div>
+              </div>
+              <!--  Challenge - Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">15 Days to Better Mind</h5>
+                  <p class="card-text"> The daily challenges are very easy to do and once you do them you can continue with the ones you find most beneficial.</p>
+                  <a href="https://cleanfoods.eu/magazine/15-day-mental-health-challenge" target="_blank" class="btn btn-primary btn-explore">Try Now</a>
+                </div>
+              </div>
+                <!-- Link to More Challenges -->
+                <button class="learn-more-btn"><a class="btn btn-primary btn-explore" href="#" role="button">More Challenges</a></button>
+            </div>
         </div>
       </section>
 
       <!--  Blogs and Articles -->
 
-      <section class="py-5" id="library">
+      <section class="py-5 bg-light" id="library">
         <div class="container">
           <h2 class="headings">Blogs & Articles</h2>
+          <div class="row-cols-6 d-flex flex-nowrap overflow-auto horizontal-scroll-container course-container">
+              <!-- Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lawyers With Depression</h5>
+                  <p class="card-text">Perfectionism in the Legal Profession & Its Relationship to Lawyer and Law Student Mental Health: An Interview with Jordana Confino.</p>
+                  <a href="https://www.lawyerswithdepression.com/articles/category/dans-blog/" target="_blank" class="btn btn-primary btn-explore">Read Now</a>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Worry Games</h5>
+                  <p class="card-text">The whole point of  The Worry Games is to let all of my fellow anxiety  “sufferers”  know that WE ARE NOT LOSING OUR MINDS. Our brains are not sick..</p>
+                  <a href="https://theworrygames.com/" target="_blank" class="btn btn-primary btn-explore">Read Now</a>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Trauma Recovery With Writing Practice</h5>
+                  <p class="card-text">Having a writing practice can be a really effective way to mentally tune in with and make friends with the part of ourselves that has answers...</p>
+                  <a href="https://www.new-synapse.com/aps/wordpress/?p=2809" target="_blank" class="btn btn-primary btn-explore">Read Now</a>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">10 Truths About Suicide & Suicide Attempts</h5>
+                  <p class="card-text">Talking about suicide does not increase the risk... not talking about it actually increases the risks.</p>
+                  <a href="https://natashatracy.com/mental-illness-issues/suicide/10-truths-about-suicide-and-suicide-attempts/" target="_blank" class="btn btn-primary btn-explore">Read Now</a>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="card m-2" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Reality of "High Funvtioning" Depression</h5>
+                  <p class="card-text">I belong to a category of people who live with “high functioning” depression. While this is not a clinical diagnosis, it has become a...</p>
+                  <a href="https://www.nami.org/Blogs/NAMI-Blog/October-2023/The-Reality-of-High-Functioning-Depression" target="_blank" class="btn btn-primary btn-explore">Read Now</a>
+                </div>
+              </div>
+                <!-- Link to More BlogsAndArticles -->
+                <button class="learn-more-btn"><a class="btn btn-primary btn-explore" href="#" role="button">Explore More</a></button>
+            </div>
         </div>
       </section>
+
+
+
     </main>
 
     <!--  Footer  -->
 
-    <footer id="footer">
+    <footer id="footer" style="background-color: white;">
       <div class="container text-center">
         <p>&copy; 2023 MindYourWellBeing. All rights reserved.</p>
     </div>    
