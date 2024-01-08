@@ -1,5 +1,18 @@
 
 /*Review Cards*/
+
+#courses, #challenges, #library{
+    min-height: 410px;
+}
+
+.course-container{
+    min-height: 410px;
+}
+
+.course-container .card{
+    height: 400px;
+}
+
 .card{
     height: 230px;
     justify-content: center;
