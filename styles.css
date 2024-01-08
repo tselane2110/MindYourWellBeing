@@ -10,13 +10,36 @@
 }
 
 .course-container .card{
-    height: 400px;
+    height: 350px;
 }
 
 .card{
     height: 230px;
     justify-content: center;
 }
+
+.custom-card {
+    width: 400px;
+    margin-bottom: 3px;
+  }
+
+  .custom-card img {
+    object-fit: cover; /* Make the image fill the fixed-size box */
+    height: 150px; /* Set the fixed height of the image box */
+  }
+
+  .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2; /* Limit to 3 lines */
+  }
+
+  .card-title {
+    height: 50px; /* Set a fixed height for the title space */
+    line-height: 25px; /* Adjust line height for centering */
+    overflow: hidden;
+  }
 
 /* Product Cards */
 .ecommerce, .appointments, .resources{
@@ -72,6 +95,12 @@
 }
 
 /* navbar styles */
+
+nav{
+    height: 70px;
+    z-index: 10001;
+    background-color: #fff;
+}
 
 .navbar-brand {
     color: rgb(247, 20, 228);;
