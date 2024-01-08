@@ -104,7 +104,7 @@
 }
 
 .btn-explore:hover {
-    transform: scale(1.1); /* Scale the button on hover (you can adjust the scale factor) */
+    transform: scale(1.15); /* Scale the button on hover (you can adjust the scale factor) */
     border: #e74c3c;
 }
 
@@ -156,3 +156,55 @@ body {
     background-color: #f8f9fa; /* Adjust the background color as needed */
     padding: 10px;
   }
+
+
+  /* get help */
+
+.get-help{
+    color: white; 
+    background: linear-gradient(to right, #9b59b6, #e74c3c);
+    border-color: rgb(136, 119, 146);
+    border-radius: 20px;
+}
+
+.btn:focus{
+    box-shadow: none;
+    color: white;
+    border-color: none;
+    
+}
+
+.get-help:hover{
+    color: black;
+    border-color: #f8f9fa;
+}
+
+/* pop up get help box */
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+    background-color: #f8f9fa;
+    font-weight: bolder;
+    color: rgb(45, 33, 51);
+  }
+
+  .modal-content a{
+    color: #9b59b6;
+  }
+  
